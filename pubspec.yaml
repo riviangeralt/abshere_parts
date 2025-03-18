@@ -1,4 +1,4 @@
-name: gosi_hr_insights_app
+name: abshere_app
 description: "A new Flutter project."
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -13,8 +13,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  hr_insights:
-    path: packages/hr_insights
+  app:
+    path: packages/app
   flutter_screenutil: ^5.9.3
   intl: ^0.20.2
 

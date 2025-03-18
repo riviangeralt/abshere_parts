@@ -5,24 +5,52 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "masdr_flutter-master",
+            "name": "Abshere Parts(UAT)",
             "request": "launch",
             "type": "dart",
-            "program": "lib/main.dart"  // Specify the path to your main.dart file here
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "uat"
+            ]
         },
         {
-            "name": "masdr_flutter-master (profile mode)",
+            "name": "Abshere Parts(PILOT)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile",
-            "program": "lib/main.dart"  // Specify the path to your main.dart file here
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "pilot"
+            ]
         },
         {
-            "name": "masdr_flutter-master (release mode)",
+            "name": "Abshere Parts(PROD)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release",
-            "program": "lib/main.dart"  // Specify the path to your main.dart file here
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "prod"
+            ]
+        },
+        {
+            "name": "Abshere Parts(UAT Ios)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+        },
+        {
+            "name": "Abshere Parts(Pilot Ios)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+        },
+        {
+            "name": "Abshere Parts(Prod ios)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
         }
     ]
 }

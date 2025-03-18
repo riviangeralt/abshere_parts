@@ -1,5 +1,5 @@
+import 'package:app/app.dart';
 import 'package:flutter/material.dart';
-import 'package:hr_insights/hr_insights.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
-        onGenerateRoute: HrInsightsNavigator.generateRoute,
+        onGenerateRoute: AbshereAppNavigator.generateRoute,
       ),
     );
   }

@@ -1,44 +1,134 @@
 plugins {
     id "com.android.application"
     id "kotlin-android"
-    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
+    // id "com.google.gms.google-services"
 }
 
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def versionProps = new Properties()
+def versionPropsFile = rootProject.file('version.properties')
+if (versionPropsFile.exists()) {
+    versionPropsFile.withReader('UTF-8') { reader ->
+        versionProps.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode', '1')
+def flutterVersionName = localProperties.getProperty('flutter.versionName', '1.0')
+
+def compileSdkVersionProp = localProperties.getProperty('flutter.compileSdkVersion').toInteger()
+def minSdkVersionProp = localProperties.getProperty('flutter.minSdkVersion').toInteger()
+def targetSdkVersionProp = localProperties.getProperty('flutter.targetSdkVersion').toInteger()
+
 android {
-    namespace = "com.example.masdr_hr_insights_app"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    namespace "com.abshere.mobile.app"
+    compileSdkVersion compileSdkVersionProp
+    ndkVersion flutter.ndkVersion
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.masdr_hr_insights_app"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        multiDexEnabled true
+        applicationId "com.abshere.mobile.app"
+        minSdkVersion minSdkVersionProp
+        targetSdkVersion targetSdkVersionProp
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        manifestPlaceholders["partnerCode"] = "ABSHERE"
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+        }
     }
+
+    flavorDimensions "releaseType" 
+
+    productFlavors {
+        uat {
+            manifestPlaceholders = [
+                appName: "Abshere Mobile (UAT)",
+            ]
+            dimension "releaseType"
+            applicationIdSuffix ".uat"
+            versionCode versionProps.getProperty('code') as int
+            versionName versionProps.getProperty('name')
+        }
+        
+        preprod {
+            manifestPlaceholders = [
+                appName: "Abshere Mobile (Preprod)",
+            ]
+            dimension "releaseType"
+            applicationIdSuffix ".preprod"
+            versionCode versionProps.getProperty('code') as int
+            versionName versionProps.getProperty('name')
+        }
+        
+        prod {
+            manifestPlaceholders = [
+                appName: "Abshere Parts",
+            ]
+            dimension "releaseType"
+            versionCode versionProps.getProperty('code') as int
+            versionName versionProps.getProperty('name')
+        }
+    }
+
+    // signingConfigs {
+    //     release {
+    //         keyAlias 'abshereapp'
+    //         keyPassword 'yourpassword'
+    //         storePassword 'yourpassword'
+    //         storeFile file("${rootDir}/upload_keystore.jks")
+    //         v1SigningEnabled true
+    //         v2SigningEnabled true
+    //     }
+    //     debug {
+    //         storeFile file("${rootDir}/debug_keystore.jks")
+    //         keyAlias 'debug'
+    //         keyPassword 'android'
+    //         storePassword 'android'
+    //         v1SigningEnabled true
+    //         v2SigningEnabled true
+    //     }
+    // }
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.debug
+            // signingConfig signingConfigs.release
+            // minifyEnabled true
+            // shrinkResources true
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig = signingConfigs.debug
+            // signingConfig signingConfigs.debug
+            // minifyEnabled false
+            // shrinkResources false
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 flutter {
-    source = "../.."
+    source '../..'
 }

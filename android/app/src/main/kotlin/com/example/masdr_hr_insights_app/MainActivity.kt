@@ -1,4 +1,4 @@
-package com.example.masdr_hr_insights_app
+package com.abshere.mobile.app
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,13 +1,14 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '12.0'
+# platform :ios, '13.0'
+use_frameworks! # This is important
 
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
 project 'Runner', {
-  'Debug' => :debug,
-  'Profile' => :release,
-  'Release' => :release,
+  'Abshere-UAT' => :debug,
+  'Abshere-Release' => :release,
+  'Abshere-Pilot' => :release,
 }
 
 def flutter_root
@@ -30,11 +31,29 @@ flutter_ios_podfile_setup
 target 'Runner' do
   use_frameworks!
   use_modular_headers!
-
+  
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-  target 'RunnerTests' do
-    inherit! :search_paths
-  end
+end
+
+target 'Abshere-UAT' do
+  use_frameworks!
+  use_modular_headers!
+  
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+end
+
+target 'Abshere-Pilot' do
+  use_frameworks!
+  use_modular_headers!
+  
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+end
+
+target 'Abshere-Release' do
+  use_frameworks!
+  use_modular_headers!
+  
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
 
 post_install do |installer|
