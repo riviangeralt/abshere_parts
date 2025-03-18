@@ -64,7 +64,7 @@ android {
     productFlavors {
         uat {
             manifestPlaceholders = [
-                appName: "Abshere Mobile (UAT)",
+                appName: "Absherbe Mobile (UAT)",
             ]
             dimension "releaseType"
             applicationIdSuffix ".uat"
@@ -74,7 +74,7 @@ android {
         
         preprod {
             manifestPlaceholders = [
-                appName: "Abshere Mobile (Preprod)",
+                appName: "Absherbe Mobile (Preprod)",
             ]
             dimension "releaseType"
             applicationIdSuffix ".preprod"
@@ -84,7 +84,7 @@ android {
         
         prod {
             manifestPlaceholders = [
-                appName: "Abshere Parts",
+                appName: "Absherbe Parts",
             ]
             dimension "releaseType"
             versionCode versionProps.getProperty('code') as int

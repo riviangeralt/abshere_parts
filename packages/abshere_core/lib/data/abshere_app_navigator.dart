@@ -1,5 +1,6 @@
 import 'package:abshere_core/data/res/strings/abshere_app_navigator_strings.dart';
-import 'package:abshere_core/ui/abshere_login/abshere_login.dart';
+import 'package:abshere_core/ui/absherbe_login/absherbe_login.dart';
+import 'package:abshere_core/ui/absherbe_signup/absherbe_signup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -12,7 +13,16 @@ class AbshereAppNavigator {
             name: AbshereAppNavigatorStrings.asbhereLoginRoute,
           ),
           builder: (context) {
-            return const AbshereLogin();
+            return const AbsherbeLogin();
+          },
+        );
+      case AbshereAppNavigatorStrings.abshereSignupRoute:
+        return MaterialPageRoute(
+          settings: const RouteSettings(
+            name: AbshereAppNavigatorStrings.abshereSignupRoute,
+          ),
+          builder: (context) {
+            return const AbsherbeSignup();
           },
         );
     }

@@ -1,20 +1,15 @@
 class AbshereAppStrings {
-  static const String businessConsultations = 'Business Consultations';
-  static const String viewTurnoverStatics =
-      'View the turnover \nstatistics By :';
-  static const String viewSalaryGrowthStatics =
-      'View the salary growth \nstatistics By :';
-  static const String compareWithMarket = 'Compare with Market';
-  static const String totalEmployees = 'Total Employees';
-  static const String totalLeavers = 'Total Leavers';
-  static const String turnoverRate = 'Turnover Rate';
-  static const String comingSoon = 'Coming Soon';
-  static const String diveDeeperText =
-      'Dive deeper into your HR data with the\nWork Experience filter. Register now for\nour upcoming beta to access this feature.';
-  static const String registerForUpcoming = 'Register for Upcoming Beta';
-  static const String compareYourEstablishment =
-      'Comparing your establishment with the\nmarket using the %@ Filter is on its\nway. Register now for our upcoming beta\nto access this feature.';
-  static const String totalMonthlySalaries = 'Total Monthly Salaries';
-  static const String totalAverageSalaries = 'Total Average Salaries';
-  static const String moreText = 'More';
+  static const String createAnAccount = 'Create an account';
+  static const String login = 'Login';
+  static const String enterDetails = 'Enter your details below';
+  static const String enterPhoneNumber = 'ENTER PHONE NUMBER';
+  static const String enterEmail = 'ENTER EMAIL';
+  static const String userName = 'USER NAME';
+  static const String enterPassword = 'ENTER PASSWORD';
+  static const String confirmPassword = 'CONFIRM PASSWORD';
+  static const String logIn = 'Log In';
+  static const String signUpWithGoogle = 'Sign up with Google';
+  static const String dontHaveAccount = 'Don’t have account?';
+  static const String signup = 'Sign up';
+  static const String createAccount = 'Create Account';
 }
