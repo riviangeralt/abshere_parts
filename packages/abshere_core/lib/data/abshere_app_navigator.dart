@@ -1,5 +1,5 @@
-import 'package:app/data/res/strings/abshere_app_navigator_strings.dart';
-import 'package:app/ui/abshere_login/abshere_login.dart';
+import 'package:abshere_core/data/res/strings/abshere_app_navigator_strings.dart';
+import 'package:abshere_core/ui/abshere_login/abshere_login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,4 +1,4 @@
-import 'package:app/app.dart';
+import 'package:abshere_core/abshere_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

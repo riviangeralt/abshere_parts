@@ -1,6 +1,6 @@
 import 'dart:developer';
 import 'package:dio/dio.dart';
-import 'package:app/utils/env_config.dart';
+import 'package:abshere_core/utils/env_config.dart';
 
 class ApiClient {
   late Dio _dio;

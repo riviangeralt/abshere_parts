@@ -1,4 +1,4 @@
-import 'package:app/widgets/custom_appbar.dart';
+import 'package:abshere_core/widgets/custom_appbar.dart';
 import 'package:flutter/material.dart';
 
 class AbshereLogin extends StatelessWidget {
