@@ -1,177 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>CADisableMinimumFrameDurationOnPhone</key>
-	<true/>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>CFBundleDisplayName</key>
-	<string>$(APP_DISPLAY_NAME)</string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>com</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>$(FLUTTER_BUILD_NAME)</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.MOSL.MAST</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.426810070863-ht8c1ifs72acvrmote7ti9i7sr4c5dui</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string></string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>upswing-access-partner</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.MOSL.MAST</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>mosl</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.MOSL.MAST</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>moinvestor.page.link</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.MOSL.MAST</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>moriseapp.page.link</string>
-			</array>
-		</dict>
-	</array>
-	<key>CFBundleVersion</key>
-	<string>$(FLUTTER_BUILD_NUMBER)</string>
-	<key>CleverTapAccountID</key>
-	<string>6Z5-4R8-776Z</string>
-	<key>CleverTapRegion</key>
-	<string>in1</string>
-	<key>CleverTapToken</key>
-	<string>b24-516</string>
-	<key>FirebaseAutomaticScreenReportingEnabled</key>
-	<false/>
-	<key>FirebaseDynamicLinksCustomDomains</key>
-	<array>
-		<string>moinvestor.page.link</string>
-		<string>moriseapp.page.link</string>
-	</array>
-	<key>FlutterDeepLinkingEnabled</key>
-	<true/>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>tez</string>
-		<string>phonepe</string>
-		<string>research360app</string>
-		<string>paytmmp</string>
-		<string>paytmmp://upi/pay</string>
-		<string>cydia</string>
-		<string>tez</string>
-		<string>gpay</string>
-		<string>phonepe</string>
-		<string>paytm</string>
-		<string>paytmmp</string>
-		<string>bhim</string>
-		<string>upi</string>
-		<string>lotza</string>
-		<string>mobikwik</string>
-		<string>whatsapp</string>
-		<string>http</string>
-		<string>https</string>
-		<string>upswing-access-partner</string>
-	</array>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSAllowsArbitraryLoads</key>
+		<key>CADisableMinimumFrameDurationOnPhone</key>
 		<true/>
-		<key>NSAllowsArbitraryLoadsInWebContent</key>
-		<true/>
-	</dict>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>Rise would like to access your photo library for profile photo and document update</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Rise App requires camera permission to capturing photos and documents.</string>
-	<key>NSContactsUsageDescription</key>
-	<string>Rise would like to access your contacts to function properly.</string>
-	<key>NSFaceIDUsageDescription</key>
-	<string>Rise requires face Authentication for unlocking app</string>
-	<key>NSFileProviderPresenceUsageDescription</key>
-	<string>Rise App requires camera permission to upload photos and documents.</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Enabling this allow us to getting your location and City which helps in finding your local language to support you.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Enabling this allow us to getting your location and City which helps in finding your local language to support you.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Enabling this allow us to getting your location and City which helps in finding your local language to support you.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>For offline e-sign, we require Camera and Microphone permission for video call with the KYC Agent as per SEBI regulation.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Rise would like to access your photo library for profile photo and document update</string>
-	<key>Privacy - Tracking usage description</key>
-	<string>Rise app requires tracking permission to track non organic installs</string>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
+		<key>CFBundleDevelopmentRegion</key>
+		<string>$(DEVELOPMENT_LANGUAGE)</string>
+		<key>CFBundleDisplayName</key>
+		<string>$(APP_DISPLAY_NAME)</string>
+		<key>CFBundleExecutable</key>
+		<string>$(EXECUTABLE_NAME)</string>
+		<key>CFBundleIdentifier</key>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleName</key>
+		<string>com</string>
+		<key>CFBundlePackageType</key>
+		<string>APPL</string>
+		<key>CFBundleShortVersionString</key>
+		<string>$(FLUTTER_BUILD_NAME)</string>
+		<key>CFBundleSignature</key>
+		<string>????</string>
+		<key>CFBundleURLTypes</key>
+		<array>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>com.MOSL.MAST</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>com.googleusercontent.apps.426810070863-ht8c1ifs72acvrmote7ti9i7sr4c5dui</string>
+				</array>
+			</dict>
+			<dict>
+				<key>CFBundleURLName</key>
+				<string></string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>upswing-access-partner</string>
+				</array>
+			</dict>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>com.MOSL.MAST</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>mosl</string>
+				</array>
+			</dict>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>com.MOSL.MAST</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>moinvestor.page.link</string>
+				</array>
+			</dict>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>com.MOSL.MAST</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>moriseapp.page.link</string>
+				</array>
+			</dict>
+		</array>
+		<key>CFBundleVersion</key>
+		<string>$(FLUTTER_BUILD_NUMBER)</string>
+		<key>CleverTapAccountID</key>
+		<string>6Z5-4R8-776Z</string>
+		<key>CleverTapRegion</key>
+		<string>in1</string>
+		<key>CleverTapToken</key>
+		<string>b24-516</string>
+		<key>FirebaseAutomaticScreenReportingEnabled</key>
 		<false/>
-		<key>UISceneConfigurations</key>
-		<dict/>
+		<key>FirebaseDynamicLinksCustomDomains</key>
+		<array>
+			<string>moinvestor.page.link</string>
+			<string>moriseapp.page.link</string>
+		</array>
+		<key>FlutterDeepLinkingEnabled</key>
+		<true/>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>tez</string>
+			<string>phonepe</string>
+			<string>research360app</string>
+			<string>paytmmp</string>
+			<string>paytmmp://upi/pay</string>
+			<string>cydia</string>
+			<string>tez</string>
+			<string>gpay</string>
+			<string>phonepe</string>
+			<string>paytm</string>
+			<string>paytmmp</string>
+			<string>bhim</string>
+			<string>upi</string>
+			<string>lotza</string>
+			<string>mobikwik</string>
+			<string>whatsapp</string>
+			<string>http</string>
+			<string>https</string>
+			<string>upswing-access-partner</string>
+		</array>
+		<key>LSRequiresIPhoneOS</key>
+		<true/>
+		<key>NSAppTransportSecurity</key>
+		<dict>
+			<key>NSAllowsArbitraryLoads</key>
+			<true/>
+			<key>NSAllowsArbitraryLoadsInWebContent</key>
+			<true/>
+		</dict>
+		<key>NSAppleMusicUsageDescription</key>
+		<string>Rise would like to access your photo library for profile photo and document update</string>
+		<key>NSCameraUsageDescription</key>
+		<string>Rise App requires camera permission to capturing photos and documents.</string>
+		<key>NSContactsUsageDescription</key>
+		<string>Rise would like to access your contacts to function properly.</string>
+		<key>NSFaceIDUsageDescription</key>
+		<string>Rise requires face Authentication for unlocking app</string>
+		<key>NSFileProviderPresenceUsageDescription</key>
+		<string>Rise App requires camera permission to upload photos and documents.</string>
+		<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+		<string>Enabling this allow us to getting your location and City which helps in finding your local language to support you.</string>
+		<key>NSLocationAlwaysUsageDescription</key>
+		<string>Enabling this allow us to getting your location and City which helps in finding your local language to support you.</string>
+		<key>NSLocationWhenInUseUsageDescription</key>
+		<string>Enabling this allow us to getting your location and City which helps in finding your local language to support you.</string>
+		<key>NSMicrophoneUsageDescription</key>
+		<string>For offline e-sign, we require Camera and Microphone permission for video call with the KYC Agent as per SEBI regulation.</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>Rise would like to access your photo library for profile photo and document update</string>
+		<key>Privacy - Tracking usage description</key>
+		<string>Rise app requires tracking permission to track non organic installs</string>
+		<key>UIApplicationSceneManifest</key>
+		<dict>
+			<key>UIApplicationSupportsMultipleScenes</key>
+			<false/>
+			<key>UISceneConfigurations</key>
+			<dict/>
+		</dict>
+		<key>UIApplicationSupportsIndirectInputEvents</key>
+		<true/>
+		<key>UILaunchStoryboardName</key>
+		<string>LaunchScreen</string>
+		<key>UIMainStoryboardFile</key>
+		<string>Main</string>
+		<key>UIRequiresFullScreen</key>
+		<true/>
+		<key>UIStatusBarHidden</key>
+		<false/>
+		<key>UISupportedInterfaceOrientations</key>
+		<array>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		</array>
+		<key>com.apple.developer.associated-domains</key>
+		<array>
+			<string>applinks:moriseapp.page.link</string>
+			<string>applinks:moinvestor.page.link</string>
+			<string>applinks:superapp.com</string>
+		</array>
 	</dict>
-	<key>UIApplicationSupportsIndirectInputEvents</key>
-	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UIRequiresFullScreen</key>
-	<true/>
-	<key>UIStatusBarHidden</key>
-	<false/>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-	</array>
-	<key>com.apple.developer.associated-domains</key>
-	<array>
-		<string>applinks:moriseapp.page.link</string>
-		<string>applinks:moinvestor.page.link</string>
-		<string>applinks:superapp.com</string>
-	</array>
-</dict>
 </plist>
