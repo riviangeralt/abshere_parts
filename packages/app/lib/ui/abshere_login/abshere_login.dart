@@ -1,3 +1,4 @@
+import 'package:app/widgets/custom_appbar.dart';
 import 'package:flutter/material.dart';
 
 class AbshereLogin extends StatelessWidget {
@@ -6,6 +7,7 @@ class AbshereLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: CustomAppbar(),
       body: Center(
         child: Text('Abshere Login'),
       ),
